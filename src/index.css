@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   @font-face {
+      font-family: 'Euclid_re';
+      font-display: swap;
+      src: url('/fonts/Euclid_reg.woff2') format('woff2');
+   }
+
+   @font-face {
+      font-family: 'Euclid_li';
+      font-display: swap;
+      src: url('/fonts/Euclid_Light.woff2') format('woff2');
+   }
+
+
+   @font-face {
+      font-family: 'PlaywriteEN';
+      font-display: swap;
+      src: url('/fonts/PlaywriteEN_reg.woff2') format('woff2');
+   }
+
+   @font-face {
+      font-family: 'raleway_re';
+      font-display: swap;
+      src: url('/fonts/Raleway-Regular.ttf') format('woff2');
+   }
+
+}
+
+:root {
+   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+   color: rgba(255, 255, 255, 0.87);
+   background-color: #ffffff;
+   font-synthesis: none;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
