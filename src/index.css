@@ -6,36 +6,56 @@
    @font-face {
       font-family: 'Euclid_re';
       font-display: swap;
-      src: url('/fonts/Euclid_reg.woff2') format('woff2');
+      src: url('/fonts/EuclidRegular.woff2') format('woff2');
    }
 
    @font-face {
-      font-family: 'Euclid_li';
+      font-family: 'ClashGrotex';
       font-display: swap;
-      src: url('/fonts/Euclid_Light.woff2') format('woff2');
-   }
-
-
-   @font-face {
-      font-family: 'PlaywriteEN';
-      font-display: swap;
-      src: url('/fonts/PlaywriteEN_reg.woff2') format('woff2');
+      src: url('/fonts/ClashGrotesk-Regular.woff2') format('woff2');
    }
 
    @font-face {
-      font-family: 'raleway_re';
+      font-family: 'Satoshi_re';
       font-display: swap;
-      src: url('/fonts/Raleway-Regular.ttf') format('woff2');
+      src: url('/fonts/Satoshi-Regular.woff2') format('woff2');
+   }
+
+   @font-face {
+      font-family: 'Manrope_re';
+      font-display: swap;
+      src: url('/fonts/Manrope-Regular.woff2') format('woff2');
+   }
+
+   @font-face {
+      font-family: 'Satoshi_Bk';
+      font-display: swap;
+      src: url('/fonts/Satoshi-Black.woff2') format('woff2');
    }
 
 }
 
+
+/* default scrollbar  */
+.custom-scrollbar {
+   scrollbar-width: none;
+   -ms-overflow-style: none;
+   overflow-x: auto;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+   display: none;
+}
+
+/* colors */
 :root {
-   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-   color: rgba(255, 255, 255, 0.87);
-   background-color: #ffffff;
-   font-synthesis: none;
-   text-rendering: optimizeLegibility;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
+  
+   --black: 0, 0, 0;
+   --white: 255, 255, 255;
+   --purple: 214, 181, 255;
+   --green: 209, 243, 200;
+   --red: 255, 167, 148;
+   --yellow: 255, 255, 211;
+   --blue: 182, 227, 249;
+   --orange: 249, 195, 116;
 }

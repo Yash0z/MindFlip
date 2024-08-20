@@ -3,29 +3,37 @@ export default {
    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
    theme: {
       screens: {
-         'lg': "1694px",
+         xs: "375px",
+         sm: "420px",
+         md: "768px",
+         lg: "1024px",
+         xl: "1280px",
+         xxl: "1400px",
       },
       extend: {
          fontFamily: {
             Euclid_re: ['Euclid_re'],
-            Euclid_li: ['Euclid_li'],
-            Raleway_re: ['raleway_re'],
-            PlaywriteEN: ['PlaywriteEN'],
+            ClashGrotex: ['ClashGrotex'],
+            Satoshi_re: ['Satoshi_re'],
+            Satoshi_bk: ['Satoshi_Bk'],
+            Manrope_re: ['Manrope_re'],
+            Helvetica_re: ['Helvetica_re']
          },
          colors: {
-            background: 'rgba(var(--background))',
-            active: 'rgba(var(--active))',
-            filled: 'rgba(var(--filled))',
-            accent1: 'rgba(var(--accent-1))',
-            accent2: 'rgba(var(--accent-2))',
-            accent3: 'rgba(var(--accent-3))',
-            textclr1: 'rgba(var(--text-clr1))',
-            textclr2: 'rgba(var(--text-clr2))',
+            black: 'rgba(var(--black))',
+            white: 'rgba(var(--white))',
+            purple: 'rgba(var(--purple))',
+            green: 'rgba(var(--green))',
+            red: 'rgba(var(--red))',
+            yellow: 'rgba(var(--yellow))',
+            blue: 'rgba(var(--blue))',
+            orange: 'rgba(var(--orange))',
          },
          typoraphy: {
             DEFAULT: {
                css: {
                   "*": {
+
                      margin: 0,
                      padding: 0,
                      listStyle: "none",
