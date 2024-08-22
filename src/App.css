@@ -1,0 +1,21 @@
+.homePage {
+   display: grid;
+   grid-template-rows: 1fr 10fr;
+   grid-template-columns: 4fr 1fr;
+   grid-template-areas:
+      "topbar topbar"
+      "board rightpane"
+   ;
+}
+
+.topBar {
+   grid-area: topbar;
+}
+
+.rightPane {
+   grid-area: rightpane;
+}
+
+.board {
+   grid-area: board;
+}
