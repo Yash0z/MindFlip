@@ -2,20 +2,10 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const initialState = [
 
-   { id: '1', content: "abc", answer: "das", bookmarked: true },
-   { id: '2', content: "abc", answer: "das", bookmarked: true },
-   { id: '3', content: "abc", answer: "das", bookmarked: true },
-   { id: '5', content: "abc", answer: "das", bookmarked: true },
+   { id: 1, content: "Hello ", answer: "wkwk", bookmarked: true }
 
-   { id: '4', content: "abc", answer: "das", bookmarked: true },
 
-   { id: '4', content: "abc", answer: "das", bookmarked: true },
-   { id: '4', content: "abc", answer: "das", bookmarked: true },
-   { id: '4', content: "abc", answer: "das", bookmarked: true },
-   { id: '4', content: "abc", answer: "das", bookmarked: true },
 
-   
-   
 ]
 
 const cardSlice = createSlice({
