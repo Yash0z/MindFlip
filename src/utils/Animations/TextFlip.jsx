@@ -12,7 +12,7 @@ const TextFlip = ({ text }) => {
 				rotationX: 540,
 				duration: 1,
 				ease: "power1.inOut",
-				repeatDelay: 2,
+				repeatDelay: 10,
 				repeat: -1,
 				yoyo: true,
 			}
