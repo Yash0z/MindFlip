@@ -4,13 +4,14 @@ import { useRef, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { sidebarState } from "../../Store/SidebarSlice/sidebarSlice";
 
-const ToggleAnimation = ({ refer }) => {
+const ToggleAnimation = ({ sidebarRef, textRef }) => {
 	let tl = useRef();
 	const isOpen = useSelector(sidebarState);
-	useGSAP(
-		() => {
-			tl.current = gsap.timeline({ paused: true }).fromTo(
-				refer.current,
+	useGSAP(() => {
+		tl.current = gsap
+			.timeline({ paused: true })
+			.fromTo(
+				sidebarRef.current,
 				{
 					clipPath: "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)",
 				},
@@ -19,11 +20,14 @@ const ToggleAnimation = ({ refer }) => {
 					clipPath: "polygon(0% 0, 100% 0, 100% 100%, 0% 100%)",
 					ease: "power4.inOut",
 				}
-			);
-		},
-
-		{ scope: refer }
-	);
+			)
+			.from(textRef.current, {
+				translateX: 300,
+				duration: 0.8,
+				stagger: 0.05,
+				delay: -0.85,
+			});
+	});
 
 	useEffect(() => {
 		if (isOpen) {
